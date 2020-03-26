@@ -4,149 +4,79 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kirill Anisimov</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
 	<link rel="stylesheet" href="main.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
-	<section class="hero is-dark is-bold is-fullheight">
-		<div class="hero-body">
-			<div class="container has-text-centered">
-				<p class="title is-1 is-spaced animated slideInLeft">
-					Hello, I'm <span class="has-text-info">Kirill Anisimov</span>.
-				</p>
-				<p class="subtitle is-3 animated slideInRight delay-1s">
-					<!-- I'm a software developer with a focus on
-					<span class="has-text-primary">Full Stack Web Development.</span> -->
-					I'm a <span class="has-text-primary">Full Stack Web Developer</span>.
-				</p>
-				<p class="animated bounceInUp delay-2s">
-					<button id="view-my-work" class="button is-large is-link">
-						<span>View my work</span>
-						<span class="icon is-medium">
-							<i class="fas fa-arrow-down"></i>
-						</span>
-					</button>
-				</p>
+	<!-- <div class="uk-section uk-section-default"> -->
+		<!-- uk-height-viewport uk-width-viewport -->
+
+		<!-- <div class="uk-container uk-text-center">
+			<h1 class="uk-heading-large">Kirill Anisimov</h1>
+			<hr class="uk-divider-icon">
+			<p class="uk-heading-small uk-text-light uk-text-muted">Software Developer</p>
+			<button class="uk-button uk-button-primary uk-button-large">View my work</button>
+    </div> -->
+		<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-height-viewport" data-src="bg.jpg" uk-img>
+  		<!-- <h1>Kirill Anisimov</h1> -->
+			<div class="uk-text-center uk-container">
+				<h1 class="uk-heading-xlarge">Kirill Anisimov</h1>
+				<h1 class="uk-heading-medium uk-text-light">Software Developer</h1>
+				<!-- <button class="uk-button uk-button-secondary uk-width-1-1">Scroll Down</button> -->
 			</div>
 		</div>
-	</section>
+	<!-- </div> -->
 
-	<section id="about" class="hero is-fullheight">
-		<div class="hero-body">
-			<div class="container">
-				<h1 class="title is-1 is-uppercase has-text-centered">
-					About
-				</h1>
-				<div class="columns">
-					<div class="column">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<div class="media">
-									<!-- <div class="media-left">
-										<figure class="image is-48x48">
-											<img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-										</figure>
-									</div> -->
-									<div class="media-content">
-										<p class="title is-4">Who's this guy?</p>
-										<!-- <p class="subtitle is-6">@kirillxanisimov</p> -->
-									</div>
-								</div>
-
-								<div class="content">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Phasellus nec iaculis mauris.
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="column"></div>
-					<div class="column"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="projects" class="hero is-light">
-		<div class="hero-body">
-			<div class="container">
-				<h1 class="title is-1 is-uppercase has-text-centered">
-					Projects
-				</h1>
-			</div>
-		</div>
-	</section>
-
-	<footer id="footer" class="footer">
-		<div class="content has-text-centered">
-			<!-- <p class="is-size-2">Find me on social media:</p> -->
-			<div class="columns is-mobile is-multiline is-centered">
-				<div class="column is-narrow">
-					<a href="https://www.linkedin.com/in/kirillanisimov/"
-					target="_blank" class="button is-dark is-large is-outlined">
-						<span class="icon is-medium">
-							<i class="fab fa-linkedin"></i>
-						</span>
-						<span>LinkedIn</span>
-					</a>
-				</div>
-				<div class="column is-narrow">
-					<a href="https://github.com/kirillanisimov"
-					target="_blank"
-					class="button is-dark is-large is-outlined">
-						<span class="icon is-medium">
-							<i class="fab fa-github"></i>
-						</span>
-						<span>GitHub</span>
-					</a>
-				</div>
-				<div class="column is-narrow">
-					<a href="https://codepen.io/kirillanisimov"
-					target="_blank"
-					class="button is-dark is-large is-outlined">
-						<span class="icon is-medium">
-							<i class="fab fa-codepen"></i>
-						</span>
-						<span>CodePen</span>
-					</a>
-				</div>
-				<div class="column is-narrow">
-					<a href="https://www.instagram.com/kirillxanisimov/"
-					target="_blank"
-					class="button is-dark is-large is-outlined">
-						<span class="icon is-medium">
-							<i class="fab fa-instagram"></i>
-						</span>
-						<span>Instagram</span>
-					</a>
-				</div>
-				<div class="column is-narrow">
-					<a href="https://twitter.com/kirillxanisimov"
-					target="_blank"
-					class="button is-dark is-large is-outlined">
-						<span class="icon is-medium">
-							<i class="fab fa-twitter"></i>
-						</span>
-						<span>Twitter</span>
-					</a>
-				</div>
-			</div>
-			<p>
-				<span class="icon is-small">
-					<i class="far fa-copyright"></i>
-				</span>
-				2020 Kirill Anisimov
+	<div class="uk-section uk-section-default">
+		<div class="uk-container">
+			<!-- <h1 class="uk-heading-medium uk-text-center uk-text-light uk-text-uppercase">
+				Contact Info
+			</h1> -->
+			<p class="uk-text-large uk-text-center uk-text-light">
+				<a href="#" uk-totop uk-scroll></a>
 			</p>
+			<hr class="uk-divider-icon">
+			<div class="uk-flex uk-flex-center">
+    		<div class="">
+					<a class="uk-link-muted" href="https://www.linkedin.com/in/kirillanisimov/" target="_blank">
+						<i data-feather="linkedin" stroke-width="0.5" width="96" height="96" color="#2867B2"></i>
+					</a>
+				</div>
+    		<div class="uk-margin-left">
+					<a class="uk-link-muted" href="#" target="_blank">
+						<i data-feather="twitter" stroke-width="0.5" width="96" height="96" color="#1DA1F2"></i>
+					</a>
+				</div>
+    		<div class="uk-margin-left">
+					<a class="uk-link-muted" href="#" target="_blank">
+						<i data-feather="instagram" stroke-width="0.5" width="96" height="96" color="#E1306C"></i>
+					</a>
+				</div>
+				<div class="uk-margin-left">
+					<a class="uk-link-muted" href="#" target="_blank">
+						<i data-feather="youtube" stroke-width="0.5" width="96" height="96" color="#FF0000"></i>
+					</a>
+				</div>
+				<div class="uk-margin-left">
+					<a class="uk-link-muted" href="#" target="_blank">
+						<i data-feather="github" stroke-width="0.5" width="96" height="96" color="#333333"></i>
+					</a>
+				</div>
+				<div class="uk-margin-left">
+					<a class="uk-link-muted" href="#" target="_blank">
+						<i data-feather="codepen" stroke-width="0.5" width="96" height="96" color="#000000"></i>
+					</a>
+				</div>
+			</div>
+			<p class="uk-text-center uk-text-light">&copy; Kirill Anisimov 2020</p>
 		</div>
-	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>
