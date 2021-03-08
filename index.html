@@ -2,117 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8" />
-
-    <!-- SEO -->
-    <meta name="author" content="Kirill Anisimov" />
-    <meta name="description" content="Kirill Anisimov's Portfolio" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kirill Anisimov</title>
-
-    <!-- Devicon -->
+    <!-- UIkit CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css"
     />
-
-    <!-- Google Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto Slab"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Caveat"
-    />
-
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <!-- Bottom Navbar -->
-    <nav class="icon-bar">
-      <a class="active" href="#">
-        <i data-feather="home"></i>
-        <div>Home</div>
-      </a>
-      <a href="#">
-        <i data-feather="info"></i>
-        <div>About</div>
-      </a>
-      <a href="#">
-        <i data-feather="code"></i>
-        <div>Work</div>
-      </a>
-      <a href="#">
-        <i data-feather="mail"></i>
-        <div>Contact</div>
-      </a>
-    </nav>
-
-    <!-- Header -->
-    <header>
-      <h1>Kirill Anisimov</h1>
-      <p>Software Developer</p>
-      <a class="uppercase">Why Spring</a>
-    </header>
-
-    <!--<button onclick="i18next.changeLanguage('en')">
-      English
-    </button>
-    <button onclick="i18next.changeLanguage('ru')">
-      Russian
-    </button>-->
-
-    <!-- Skills Section -->
-    <section>
-      <div class="container">
-        <div>
-          <p>HTML</p>
-          <i class="devicon-html5-plain colored"></i>
-        </div>
-        <div>
-          <p>CSS</p>
-          <i class="devicon-css3-plain colored"></i>
-        </div>
-        <div>
-          <p>JavaScript</p>
-          <i class="devicon-javascript-plain colored"></i>
-        </div>
-        <div>
-          <p>MongoDB</p>
-          <i class="devicon-mongodb-plain colored"></i>
-        </div>
-        <div>
-          <p>Express</p>
-          <i class="devicon-express-original colored"></i>
-        </div>
-        <div>
-          <p>React</p>
-          <i class="devicon-react-original colored"></i>
-        </div>
-        <div>
-          <p>Node</p>
-          <i class="devicon-nodejs-plain colored"></i>
-        </div>
+    <div
+      class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-height-viewport"
+      data-src="bg.jpg"
+      uk-img
+    >
+      <div class="uk-text-center uk-container">
+        <h1 class="uk-heading-xlarge">Kirill Anisimov</h1>
+        <h1 class="uk-heading-medium uk-text-light">
+          Software Developer
+        </h1>
       </div>
-    </section>
+    </div>
 
-    <!-- i18next -->
-    <script src="https://unpkg.com/i18next@19.5.1/dist/umd/i18next.min.js"></script>
+    <div class="uk-section uk-section-default">
+      <div class="uk-container">
+        <p class="uk-text-large uk-text-center uk-text-light">
+          <a href="#" uk-totop uk-scroll></a>
+        </p>
+        <hr class="uk-divider-icon" />
+        <div class="uk-flex uk-flex-center">
+          <div class="">
+            <a
+              class="uk-link-muted"
+              href="https://github.com/kirillanisimov"
+              target="_blank"
+            >
+              <i
+                data-feather="github"
+                stroke-width="0.5"
+                width="60"
+                height="60"
+                color="#333333"
+              ></i>
+            </a>
+          </div>
+          <div class="uk-margin-left">
+            <a
+              class="uk-link-muted"
+              href="https://www.linkedin.com/in/kirillanisimov/"
+              target="_blank"
+            >
+              <i
+                data-feather="linkedin"
+                stroke-width="0.5"
+                width="60"
+                height="60"
+                color="#2867B2"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <p class="uk-text-center uk-text-light">&copy; Kirill Anisimov 2020</p>
+      </div>
+    </div>
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/4d47862a97.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Feather -->
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
